@@ -1,4 +1,7 @@
-@use './mixins/flex';
+@use './mixins/flex' as mixins;
 @use './mixins/media';
 @use './base/_index' as base;
 @use './globals';
+
+// components
+@use './components/header' as *;
