@@ -11,14 +11,14 @@
   }
 
   @include media.mobile {
-    min-height: calc(100dvh - 128px);
+    min-height: calc(100dvh - 109px);
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: 50;
-    left: 181px;
+    top: 50px;
+    left: 400px;
     z-index: var(--z-index-0);
     display: inline-block;
     border-radius: 50%;
@@ -45,8 +45,8 @@
   &::after {
     content: '';
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 70px;
+    bottom: 150px;
     z-index: var(--z-index-0);
     display: inline-block;
     border-radius: 100%;
@@ -112,6 +112,12 @@
 
   &__subtitle {
     margin-bottom: 69px;
+
+    & br {
+      @include mixins.mini-desktop {
+        display: none;
+      }
+    }
   }
 
   &__form {
@@ -246,7 +252,7 @@
     }
 
     &-body {
-      &-th {
+      &-td {
         font-weight: 700;
         font-size: 20px;
         line-height: 130%;
