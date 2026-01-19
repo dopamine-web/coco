@@ -3,7 +3,6 @@
 @use '../../mixins/flex' as flex;
 
 .hero {
-  position: relative;
   padding: 87px 0 141px;
 
   @include media.mini-desktop {

@@ -1,0 +1,9 @@
+@use './mixins/flex' as mixins;
+@use './mixins/media';
+@use './base/_index' as base;
+@use './globals';
+
+// components
+@use './components/header' as *;
+@use './components/pricing/hero.scss' as *;
+@use './components/footer.scss' as *;
