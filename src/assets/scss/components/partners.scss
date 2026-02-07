@@ -12,6 +12,7 @@
 &__container {
     @include flex.flex-all-between;
     gap: 30px;
+    max-width: 1110px;
 
     @include media.small-tablet {
         flex-direction: column;
