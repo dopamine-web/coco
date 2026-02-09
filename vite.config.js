@@ -5,7 +5,7 @@ import optimizer from 'vite-plugin-optimizer';
 
 export default defineConfig({
   root: './src',
-  base: '/coca/',
+  base: '/coco/',
   server: {
     port: 3000,
   },
