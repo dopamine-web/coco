@@ -1,0 +1,42 @@
+@use '../../mixins/index' as mixins;
+@use '../../mixins/media' as media;
+@use '../../mixins/flex' as flex;
+
+.believe {
+  &__container {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  &__slider {
+    &-btns {
+      top: 70px;
+      left: 39.7%;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__slide {
+    &-img {
+      &--otstup {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-head {
+      &-title {
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: var(--neutral-color-100);
+      }
+
+      &-descr {
+        font-weight: 500;
+        line-height: 178%;
+        color: var(--neutral-color-150);
+      }
+    }
+  }
+}
