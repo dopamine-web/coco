@@ -2,47 +2,43 @@
 @use '../../mixins/media' as media;
 @use '../../mixins/flex' as flex;
 
-.blog {
-  padding: 105px 0 135px;
-
-  @include media.small-tablet {
-    padding: 80px 0 100px;
-  }
+.hero {
+  padding: 95px 0 125px;
 
   @include media.mobile {
-    padding: 60px 0 80px;
+      padding: 75px 0 100px;
+    }
+
+  &__container {
+    @include media.tablet {
+      text-align: center;
+    }
   }
 
   &__title {
-    margin-bottom: 118px;
+    margin-bottom: 53px;
     font-weight: 700;
-    line-height: 120%;
     letter-spacing: -0.04em;
     color: var(--neutral-color-100);
 
-    @include media.tablet {
-        margin-bottom: 80px;
-    }
-    
-    @include media.mobile {
-        margin-bottom: 60px;
+    @include media.small-tablet {
+      margin-bottom: 33px;
     }
   }
 
-  &__wrapper {
-    @include flex.flex-all-between;
+  &__descr {
+    max-width: 720px;
+    font-weight: 600;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
 
-    @include media.small-tablet {
-        flex-direction: column;
-        gap: 20px;
+    @include media.tablet {
+      max-width: none;
     }
 
-    &-subtitle {
-      max-width: 838px;
-
-      &::before {
-        transform: translateY(-85px);
-      }
+    &::before {
+      transform: translateY(-40px);
     }
   }
 }

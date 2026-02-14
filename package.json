@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "intl-tel-input": "^26.1.1",
+    "mixitup": "^3.3.2",
     "swiper": "^12.0.3"
   }
 }

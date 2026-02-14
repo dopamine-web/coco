@@ -33,17 +33,21 @@
   // container
   --container-padding: 15px;
   --container-width: 1200px;
+  --container-medium-width: 940px;
 
   @include media.mini-desktop {
     --container-width: 1000px;
+    --container-medium-width: 800px;
   }
 
   @include media.tablet {
     --container-width: 860px;
+    --container-medium-width: 700px;
   }
 
   @include media.mobile {
     --container-width: 480px;
+    --container-medium-width: 100%;
   }
 
   // transition

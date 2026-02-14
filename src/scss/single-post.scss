@@ -5,8 +5,6 @@
 
 // components
 @use './components/header' as *;
-@use './components/blog/hero.scss' as *;
-@use './components/blog/insights.scss' as *;
-@use './components/blog/projects.scss' as *;
-@use './components/blog/articles.scss' as *;
+@use './components/single-post/hero.scss' as *;
+@use './components/single-post/blog.scss' as *;
 @use './components/footer.scss' as *;

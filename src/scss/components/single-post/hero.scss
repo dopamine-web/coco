@@ -1,0 +1,13 @@
+@use '../../mixins/media' as media;
+
+.hero {
+  padding: 80px 42px;
+
+  @include media.mobile {
+    padding: 40px 22px;
+  }
+  
+  &__title {
+    max-width: 970px;
+  }
+}

@@ -1,0 +1,114 @@
+@use '../../mixins/index' as mixins;
+@use '../../mixins/media' as media;
+@use '../../mixins/flex' as flex;
+
+.our-team {
+  position: relative;
+  padding-bottom: 100px;
+
+    @include media.small-tablet {
+    padding-bottom: 80px;
+  }
+
+  @include media.mobile {
+    padding-bottom: 60px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 70px;
+    bottom: 80%;
+    z-index: var(--z-index-0);
+    display: inline-block;
+    border-radius: 100%;
+    width: 525px;
+    height: 252px;
+    background: var(--success-color-70);
+    filter: blur(180px);
+
+    @include media.mini-desktop {
+      width: 325px;
+      height: 325px;
+    }
+
+    @include media.small-tablet {
+      width: 225px;
+      height: 225px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    max-width: 703px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include media.mobile {
+        margin-bottom: 14px;
+      }
+  }
+
+  &__descr {
+    margin-bottom: 80px;
+    max-width: 534px;
+    font-weight: 500;
+    line-height: 178%;
+    color: var(--neutral-color-150);
+
+    @include media.small-tablet {
+        margin-bottom: 50px;
+      }
+
+      @include media.mobile {
+        margin-bottom: 30px;
+      }
+  }
+
+  &__slider {
+    &-btns {
+        left: 33%;
+        transform: translateX(-52%);
+
+        @include media.tablet {
+        display: flex;
+      }
+
+      @include media.small-tablet {
+        top: 22%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+      }
+
+      @include media.mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__slide {
+    &-author {
+        margin-bottom: 16px;
+    }
+
+    &-wrapper {
+      @include flex.flex-all-between;
+      gap: 10px;
+      margin-bottom: 8px;
+
+      &-name {
+        font-weight: 600;
+        line-height: 150%;
+        color: var(--neutral-color-100);
+      }
+    }
+
+    &-profession {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+  }
+}

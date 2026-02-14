@@ -109,11 +109,11 @@
       &::before {
         content: '';
         display: inline-block;
+        flex-shrink: 0;
         width: 76px;
         height: 1px;
         background-color: var(--neutral-color-100);
         transform: translateY(-43px);
-        flex-shrink: 0;
 
         @include media.small-desktop {
           display: none;

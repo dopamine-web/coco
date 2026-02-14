@@ -1,0 +1,13 @@
+@use './mixins/flex' as mixins;
+@use './mixins/media';
+@use './base/_index' as base;
+@use './globals';
+
+// components
+@use './components/header' as *;
+@use './components/about/hero.scss' as *;
+@use './components/about/believe.scss' as *;
+@use './components/about/powerful.scss' as *;
+@use './components/about/our-team.scss' as *;
+@use './components/about/join.scss' as *;
+@use './components/footer.scss' as *;

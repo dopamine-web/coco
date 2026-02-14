@@ -1,0 +1,56 @@
+@use '../../mixins/index' as mixins;
+@use '../../mixins/media' as media;
+@use '../../mixins/flex' as flex;
+
+.projects {
+  padding: 120px 0;
+  background-color: #1d1e25;
+
+  @include media.mobile {
+        padding: 80px 0;
+      }
+
+  &__container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media.mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    &-img,
+    &-title {
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    &-descr {
+      font-weight: 500;
+      line-height: 178%;
+      color: #7e8492;
+    }
+
+    &--transform1 {
+      transform: translateY(-120px);
+
+      @include media.mobile {
+        transform: none;
+      }
+    }
+
+    &--transform2 {
+      transform: translateY(123px);
+
+      @include media.mobile {
+        transform: none;
+      }
+    }
+  }
+}

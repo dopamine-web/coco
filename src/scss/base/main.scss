@@ -75,6 +75,10 @@ label {
   max-width: calc(var(--container-width) + (var(--container-padding) * 2));
 }
 
+.container--medium {
+  max-width: var(--container-medium-width);
+}
+
 .hidden {
   font-size: 0;
   opacity: 0;
