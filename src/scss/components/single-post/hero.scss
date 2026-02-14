@@ -6,8 +6,10 @@
   @include media.mobile {
     padding: 40px 22px;
   }
-  
+
   &__title {
-    max-width: 970px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
   }
 }
