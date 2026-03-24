@@ -76,13 +76,6 @@
       }
 
       @include media.small-tablet {
-        top: 22%;
-        left: 50%;
-        width: 70px;
-        height: 70px;
-      }
-
-      @include media.mobile {
         display: none;
       }
     }

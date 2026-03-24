@@ -58,6 +58,7 @@ export const useArticlesSlider = () => {
       nextEl: '.testimonials__btn--next',
       prevEl: '.testimonials__btn--prev',
     },
+    
     breakpoints: {
       576: { spaceBetween: 32, slidesPerView: 1.5 },
       768: { spaceBetween: 32, slidesPerView: 2 },

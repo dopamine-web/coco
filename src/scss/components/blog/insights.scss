@@ -13,6 +13,22 @@
     padding-bottom: 80px;
   }
 
+  &__container {
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+
+    @include media.small-desktop {
+      justify-self: end;
+      margin: 0;
+    }
+
+    @include media.tablet {
+      justify-self: inherit;
+      margin: 0 auto;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
